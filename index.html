@@ -61,7 +61,7 @@ height: 80px;
         });
 
         function botaoClicado(event) {
-            let texto = event.querySelector("span");
+            let texto = event.currentTarget.querySelector("span");
             texto.textContent++;
         }
     </script>

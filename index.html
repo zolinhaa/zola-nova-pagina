@@ -60,8 +60,8 @@ height: 80px;
            botao.addEventListener("click",botaoClicado); 
         });
 
-        function botaoClicado() {
-            let texto = botao.querySelector("span");
+        function botaoClicado(event) {
+            let texto = event.querySelector("span");
             texto.textContent++;
         }
     </script>

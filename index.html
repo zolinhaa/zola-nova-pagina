@@ -1,71 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Meu blog tech</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimento sobe tecnologia e programação</p>
+        <p>Vou compartilhar conhecimento sobre tecnologia e programação</p>
     </header>
 
     <main>
         <article>
             <img src="imagem-blog.png"
-                alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante,cercado por ícones de WI-FI, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+                alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
             <div>
-                <h2>Primeiro post</h2>
-                <p class="artigo-autor">por: Zola</p>
-                <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da area de
-                    tecnologia.</p>
-                <button>💙<span>0</span></button>
-                <button>💎<span>0</span></button>
-
+                <h2>Primeiro Post</h2>
+                <p class="artigo-autor">Por: SEU NOME AQUI</p>
+                <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.
+                </p>
+                <button>❤️<span>0</span></button>
+                <button>👍<span>0</span></button>
             </div>
         </article>
 
         <article>
+            <img src="imagem-blog.png"
+                alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+            <div>
+                <h2>Por que o Bluetooth tem esse nome?</h2>
+                <p class="artigo-autor">Por: SEU NOME AQUI</p>
+                <p>
+                    O nome é uma homenagem a Harald "Dente Azul", um rei viking que unificou tribos da Dinamarca.
+                    <br><br>A ideia era que a tecnologia também unisse dispositivos diferentes.
+                </p>
+                <p class="artigo-fonte">Fonte: Bluetooth SIG</p>
+                <button>❤️<span>0</span></button>
+                <button>👍<span>0</span></button>
+            </div>
+        </article>
+
         <article>
             <img src="imagem-blog.png"
-                alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante,cercado por ícones de WI-FI, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+                alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
             <div>
-                <h2>Segundo post</h2>
-                <p class="artigo-autor">por: Zola</p>
-                <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de programação e curiosidades da area de
-                    tecnologia.</p>
-                <button>💙<span>0</span></button>
-                <button>💎<span>0</span></button>
-
+                <h2>Qual foi o primeiro computador?</h2>
+                <p class="artigo-autor">Por: SEU NOME AQUI</p>
+                <p>
+                    Apesar de Alan Turing ser conhecido como pai da computação, ele não criou o primeiro
+                    computador. Entre os primeiros computadores, um deles foi chamado Colossus, projetado por Tommy
+                    Flowers durante a Segunda Guerra Mundial e também, praticamente na mesma época, o ENIAC foi
+                    projetado por J. Presper Eckert e John Mauchly.
+                    <br><br>Embora o Colossus tenha funcionado antes como um "herói de guerra" especializado, o ENIAC
+                    é frequentemente chamado de "pai" por ser o primeiro programável de uso geral.
+                    <br><br>E aí, qual você consideraria como o primeiro computador?
+                </p>
+                <p class="artigo-fonte">Fonte: The National Museum of Computing</p>
+                <button>❤️<span>0</span></button>
+                <button>👍<span>0</span></button>
             </div>
         </article>
     </main>
 
-    <script>
-        const botoes = document.querySelectorAll("button");
-        botoes.forEach(function (botao) {
-            let curtiu = false;
-            botao.addEventListener("click", botaoClicado);
-        
-
-        function botaoClicado() {
-            let texto = botao.querySelector("span");
-
-            if (curtiu === false){
-                texto.textContent++;
-                curtir = true;
-            } else {
-                texto.textContent--;
-                curtiu = false;
-            }
-        }
-    });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
